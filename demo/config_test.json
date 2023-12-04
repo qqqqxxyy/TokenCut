@@ -1,0 +1,19 @@
+{
+    "default": {
+        "dataset":"VOC12",
+        "set":"train"
+    },
+
+    "CUB":{
+        "status":"to be completed"
+    },
+    "VOC12":{
+        "status":"completed",
+        "dataset":"VOC12",
+        "set":"train"
+    },
+    "注释":{
+        "work to be down":
+        "增加并行gpu数和gpu位置"
+    }
+}

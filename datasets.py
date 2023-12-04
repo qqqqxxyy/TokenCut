@@ -84,11 +84,11 @@ class Dataset:
 
         self.dataset_name = dataset_name
         self.set = dataset_set
-
         if dataset_name == "VOC07":
             self.root_path = os.path.join(DATA_PATH,'VOC2007/data/JPEGImages')
             self.year = "2007"
         elif dataset_name == "VOC12":
+            
             self.root_path = os.path.join(DATA_PATH,'VOC2012/data/JPEGImages')
             # self.root_path = "/home/qxy/Desktop/datasets/VOC2012/data/Sample"
             self.year = "2012"

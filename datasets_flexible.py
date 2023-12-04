@@ -163,7 +163,7 @@ class VOCSegmentation(VisionDataset):
         if not os.path.isdir(voc_root):
             raise RuntimeError('Dataset not found or corrupted.' +
                                ' You can use download=True to download it')
-
+        
         splits_dir = os.path.join(voc_root, 'ImageSets/Segmentation')
 
         split_f = os.path.join(splits_dir, image_set.rstrip('\n') + '.txt')
@@ -255,7 +255,6 @@ class VOCDetection(VisionDataset):
         #通过txt文件读取要加载的数据集，在目标数据集的data_annotation下
         splits_dir = os.path.join(DATA_PATH,'VOC'+self.year,'data_annotation')
         split_f = os.path.join(splits_dir, image_set.rstrip('\n') + '.txt')
-
 
         with open(os.path.join(split_f), "r") as f:
             file_names = [x.strip() for x in f.readlines()]
